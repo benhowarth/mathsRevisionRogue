@@ -5,6 +5,7 @@ function px2em(px) {
 }
 
 $( document ).ready(function() {
+	$("#score").text("yo");
 	try{
 	keysSetup=false;
 	//dungeon object
