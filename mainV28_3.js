@@ -3,7 +3,7 @@ function px2em(px) {
 	em=px/16;
 	return em;
 }
-
+alert(1);
 $( document ).ready(function() {
 	$("#score").text("yo");
 	try{
