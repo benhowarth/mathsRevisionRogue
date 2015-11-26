@@ -5,6 +5,7 @@ function px2em(px) {
 }
 alert(1);
 $( document ).ready(function() {
+	alert(2);
 	$("#score").text("yo");
 	try{
 	keysSetup=false;
