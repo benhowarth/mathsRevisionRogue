@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--link rel='stylesheet' href='style.css'/-->
+	<style>
+		#dungeonHolder
+		{
+			font-size:1em;
+			white-space: pre;
+			font-family: courier;
+			/*line-spacing:1em;
+			letter-spacing:1em;*/
+		}
+		#dungeonHolderHolder
+		{
+			width:500px;
+			height:400px;
+			overflow:hidden;
+		}
+		.moveBtn
+		{
+			width:50px;
+			height:50px;
+			background-color:#DDD;
+			padding:0px;
+			line-height:50px;
+			text-align:center;
+			font-family: courier;
+		}
+		#btnLeft,#btnMiddle,#btnRight,#score{
+			display:inline-block;
+			font-family: courier;
+		}
+		#btnUp,#btnDown{
+			margin-left:54px;
+			margin-top:4px;
+			margin-bottom:4px;
+		}
+		.noselect {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+	</style>
+    <script src="jquery-2.1.1.min.js"></script>
+	<script src='shuffle.js'></script>
+	<script src='question_quadraticV1.js'></script>
+	<script src='mainV28_3.js'></script>
+</head>
+<body class="noselect">
+	<div id="dungeonHolderHolder">
+		<div id="dungeonHolder">Dungeon Goes Here</div>
+	</div>
+	<div id="btns">
+		<div id="btnUp" class="moveBtn">&uArr;</div>
+		<div id="btnLeft" class="moveBtn">&lArr;</div>
+		<div id="btnMiddle" class="moveBtn">&Phi;</div>
+		<div id="btnRight" class="moveBtn">&rArr;</div>
+		<div id="score">Score:0</div>
+		<div id="btnDown" class="moveBtn">&dArr;</div>
+	</div>
+</body>
+</html>
