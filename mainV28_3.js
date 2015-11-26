@@ -8,6 +8,7 @@ $( document ).ready(function() {
 	alert(2);
 	$("#score").text("yo");
 	try{
+		alert(3);
 	keysSetup=false;
 	//dungeon object
 	$("#score").text("Score: 0\nLevel: 1\nQuestions Left: null");
