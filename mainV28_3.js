@@ -5,6 +5,7 @@ function px2em(px) {
 }
 
 $( document ).ready(function() {
+	try{
 	keysSetup=false;
 	//dungeon object
 	$("#score").text("Score: 0\nLevel: 1\nQuestions Left: null");
@@ -359,4 +360,6 @@ $( document ).ready(function() {
 		dungeonObj.render();
 	}
 	dungeonGen(dungeon);
+	}
+	catch(err){$("#score").text(err);}
 });
